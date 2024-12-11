@@ -1,6 +1,6 @@
 # Prototype Code Catalog 
 
-This simple Streamit application is intended to demonstrate how the GitHub API can be used to support a simple wrapper for a code catalog, as well as to spark initial discussions around the governenace and content of a code.worldbank.org program. 
+This simple Streamlit application is intended to demonstrate how the GitHub API can be used to support a simple wrapper for a code catalog, as well as to spark initial discussions around the governenace and content of a code.worldbank.org program. 
 
 * [Steamlit Application](https://proto-cat.streamlit.app)
 * [Code Repo](https://github.com/Holly-Transport/proto-cat)
