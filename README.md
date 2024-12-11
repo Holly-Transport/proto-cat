@@ -2,7 +2,10 @@
 
 This simple Streamit application is intended to demonstrate how the GitHub API can be used to support a simple wrapper for a code catalog, as well as to spark initial discussions around the governenace and content of a code.worldbank.org program. 
 
-[https://proto-cat.streamlit.app](https://proto-cat.streamlit.app)
+* [Steamlit Application](https://proto-cat.streamlit.app)
+* [Code Repo](https://github.com/Holly-Transport/proto-cat)
+* [Documentation](https://holly-transport.github.io/proto-cat/README.html)
+* [Discussion Miro Board](https://miro.com/app/board/uXjVL4wde8I=/)
 
 ![image](https://github.com/user-attachments/assets/cd9c040b-a07e-40e8-ae1f-7487b53d7455)
 
