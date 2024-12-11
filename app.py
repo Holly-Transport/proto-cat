@@ -2,15 +2,12 @@ import streamlit as st
 import requests
 import random
 from datetime import datetime
-import os
-from dotenv import load_dotenv
-
-load_dotenv()
 
 # GitHub API base URL
 GITHUB_API_URL = "https://api.github.com"
-# GitHub API Token (Replace with your actual token)
-GITHUB_API_TOKEN = os.getenv("GITHUB_API_TOKEN")
+
+# Access the GitHub API token from Streamlit secrets
+GITHUB_API_TOKEN = st.secrets["GITHUB_API_TOKEN"]
 HEADERS = {"Authorization": f"token {GITHUB_API_TOKEN}"}
 
 def get_all_repositories(org_name):
