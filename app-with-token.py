@@ -4,16 +4,19 @@ import random
 from datetime import datetime
 import pandas as pd
 
-# Constant for WorldBank organization
-ORG_NAME = "worldbank"
-GITHUB_API_URL = f"https://api.github.com/orgs/{ORG_NAME}/repos"
+# GitHub API base URL
+GITHUB_API_URL = "https://api.github.com"
+# Access the GitHub API token from Streamlit secrets
+GITHUB_API_TOKEN = st.secrets["GITHUB_API_TOKEN"]
+HEADERS = {"Authorization": f"token {GITHUB_API_TOKEN}"}
 
-def get_all_repositories():
-    """Fetch all repositories from the WorldBank organization."""
+def get_all_repositories(org_name):
+    """Fetch all repositories of the specified organization."""
+    url = f"{GITHUB_API_URL}/orgs/{org_name}/repos"
     repos = []
     page = 1
     while True:
-        response = requests.get(GITHUB_API_URL, params={"page": page, "per_page": 100})
+        response = requests.get(url, headers=HEADERS, params={"page": page, "per_page": 100})
         if response.status_code == 200:
             batch = response.json()
             if not batch:
@@ -119,10 +122,12 @@ def apply_filters(repos):
 def main():
     st.title("Prototype for Discussion: code.worldbank.org")
     
-    st.write("Browsing World Bank's GitHub repositories")
+    # Default organization
+    org_name = "worldbank"
+    st.write(f"Browsing repositories for the organization: **{org_name}**")
     
     with st.spinner("Fetching repositories..."):
-        repos = get_all_repositories()
+        repos = get_all_repositories(org_name)
     
     if repos:
         # Sort repositories by stars (desc) and then by date (most recent first)
