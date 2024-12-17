@@ -117,9 +117,9 @@ def apply_filters(repos):
     return df.to_dict('records')
 
 def main():
-    st.title("Prototype for Discussion: code.worldbank.org")
+    st.title("Code Catalog Wrapper Dicussion Starter")
     
-    st.write("Browsing World Bank's GitHub repositories")
+    st.write("Browsing World Bank's public GitHub repositories")
     
     with st.spinner("Fetching repositories..."):
         repos = get_all_repositories()
