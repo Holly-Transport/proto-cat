@@ -7,7 +7,8 @@ This simple Streamlit application is intended to demonstrate how the GitHub API 
 * [Documentation](https://holly-transport.github.io/proto-cat/README.html)
 * [Discussion Miro Board](https://miro.com/app/board/uXjVL4wde8I=/)
 
-![image](https://github.com/user-attachments/assets/cd9c040b-a07e-40e8-ae1f-7487b53d7455)
+![image](https://github.com/user-attachments/assets/53f3142a-64a5-4cb0-a9e9-21a43652c066)
+
 
 
 ## Code of Conduct
