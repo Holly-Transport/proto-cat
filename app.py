@@ -123,7 +123,7 @@ def main():
     st.title("For Discussion: code.datapartnership.org")
     
     # Default organization
-    org_name = "worldbank"
+    org_name = "datapartnership"
     st.write(f"Browsing repositories for the organization: **{org_name}**")
     
     with st.spinner("Fetching repositories..."):
