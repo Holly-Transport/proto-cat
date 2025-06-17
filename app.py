@@ -120,7 +120,7 @@ def apply_filters(repos):
     return df.to_dict('records')
 
 def main():
-    st.title("Prototype for Discussion: code.worldbank.org")
+    st.title("For Discussion: code.datapartnership.org")
     
     # Default organization
     org_name = "worldbank"
